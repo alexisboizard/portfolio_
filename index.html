@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Alexis Boizard</title>
+    <!-- Import CSS file -->
+    <link type="text/css" rel="stylesheet" href="./styles/style-index.css ">
+    <!-- Import Typed.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>        <!-- Add jquery cdn -->
+    <script src="./typed.js-master/lib/typed.min.js"></script>
+
+</head>
+<body>
+    <h3 class="title">Alexis Boizard</h3>
+    <div id="menu">
+            <div class="menu-link">
+                <a href="#whoami" class="link impair" onclick="showWhoAmI(false)"><p>Qui suis-je ?</p></a>
+                <a href="#projects" class="link pair" onclick="showProjects(false)"><p>Mes projets</p></a>
+                <a href="#skills" class="link impair" onclick="showSkills(false)"><p>Mes compétences</p></a>
+                <a href="#contact" class="link pair" onclick="showContact(false)"><p>Me contacter</p></a>
+            </div>
+        </div>
+    <div id="whoami">
+        <div class="top-bar">
+            <div class="close" onclick="showWhoAmI(true)"></div>
+            <div class="minimize"></div>
+            <div class="other"></div>
+        </div>
+        <div class="content">
+            <span id="command"></span>
+            <span id="name"></span>
+            <span id="lastname"></span>
+            <span id="age"></span>
+            <span id="student"></span>
+            <p id="bio"></p>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="top-bar">
+            <div class="close" onclick="showProjects(true)"></div>
+            <div class="minimize"></div>
+            <div class="other"></div>
+        </div>
+        <div class="content">
+            <span id="command2">guest@alexis-boizard.fr ~/ $</span>
+            <div class="pane">
+                <div class="p1 project-card" style="background-color:#0F6C2B;">
+                    <p>1</p>
+                </div>
+                <div class="p2 project-card" style="background-color:#BC6F10;">
+                    <p>2</p>
+                </div>
+                <div class="p3 project-card" style="background-color:#F4F5F5;">
+                    <p>3</p>
+                </div>
+                <div class="p4 project-card" style="background-color:#881F1B;">
+                    <p>4</p>
+                </div>
+                <div class="p5 project-card" style="background-color:#41DC0E;">
+                    <p>5</p>
+                </div>
+                <div class="p6 project-card" style="background-color:#881F1B;">
+                    <p>6</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="skills">
+        <div class="top-bar">
+            <div class="close" onclick="showSkills(true)"></div>
+            <div class="minimize"></div>
+            <div class="other"></div>
+        </div>
+        <div class="content">
+            <span id="command3">guest@alexis-boizard.fr ~/ $</span>
+            <span></span>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="top-bar">
+            <div class="close" onclick="showContact(true)"></div>
+            <div class="minimize"></div>
+            <div class="other"></div>
+        </div>
+        <div class="content">
+            <span id="command4">guest@alexis-boizard.fr ~/ $</span>
+        </div>
+    </div>
+
+<script>
+    function typingText(string,id,time){
+        let i = 0;
+        let typing = setInterval(function (){
+            document.getElementById(id).innerHTML += string[i]
+            i++
+            console.log(i)
+            if(i >= string.length){
+                clearInterval(typing)
+                //document.getElementById("command").innerHTML += "<div id='cursor'></div>"
+            }
+        },time)
+    }
+    function showWhoAmI(close){
+        document.getElementById("command").innerHTML = "guest@alexis-boizard.fr ~/ $"
+        document.getElementById("name").innerHTML = " "
+        document.getElementById("lastname").innerHTML = " "
+        document.getElementById("age").innerHTML = null
+        document.getElementById("student").innerHTML = null
+        document.getElementById("bio").innerHTML = null
+        if(close === false){
+            document.getElementById("whoami").style.display = "flex"
+            document.getElementById("whoami").style.flexDirection = "column"
+            document.getElementById("menu").style.display = "none"
+            typingText(" whoami","command",150)
+            typingText(" Prénom : Alexis","name",150)
+            typingText(" NOM : BOIZARD","lastname",150)
+            typingText(" Âge : 18 ans","age",150)
+            typingText(" Etudiant en 1ère année, en Informatique, à l'IUT Lyon 1 de Bourg-en-Bresse","student",150)
+            typingText("Bio : Passioné d'informatique depuis que je suis en 4ème, des études dans ce domaine, sont apparus comme une évidence." +
+                " Je suis aussi un sportif, un fan et un joueur de rugby, on s'éloigne un peu du clicher de l'étudiant en informatique." +
+                " Et pour s'en éloigner encore plus j'ai aussi une passion pour la cuisine." +
+                " De plus, j'ai récemement fais mes premiers pas dans le monde de l'associatif en devenant président du BDE (Bureau des Etudiants) de l'IUT Lyon 1 de Bourg-en-Bresse","bio",75)
+        }else{
+            document.getElementById("whoami").style.display = "none"
+            document.getElementById("menu").style.display = "flex"
+
+        }
+        if(cpt > 0){
+            document.getElementById("whoami").style.display = "flex"
+            document.getElementById("whoami").style.flexDirection = "column"
+            document.getElementById("menu").style.display = "none"
+        }
+
+
+    }
+    function showProjects(close){
+        if(close === false){
+            document.getElementById("projects").style.display = "flex"
+            document.getElementById("projects").style.flexDirection = "column   "
+            document.getElementById("menu").style.display = "none"
+            typingText(" ls --all projects","command2",150)
+
+
+        }else{
+            document.getElementById("projects").style.display = "none"
+            document.getElementById("menu").style.display = "flex"
+        }
+    }
+    function showSkills(close){
+        if(close === false){
+            document.getElementById("skills").style.display = "flex"
+            document.getElementById("skills").style.flexDirection = "column"
+            document.getElementById("menu").style.display = "none"
+            typingText(" ls --all skills","command3",150)
+        }else{
+            document.getElementById("skills").style.display = "none"
+            document.getElementById("menu").style.display = "flex"
+        }
+    }
+    function showContact(close){
+        if(close === false){
+            document.getElementById("contact").style.display = "flex"
+            document.getElementById("contact").style.flexDirection = "column"
+            document.getElementById("menu").style.display = "none"
+            typingText(" python3 contact.py","command4",150)
+
+        }else{
+            document.getElementById("contact").style.display = "none"
+            document.getElementById("menu").style.display = "flex"
+        }
+    }
+
+</script>
+        <!-- typed.min.js file from typed.js folder -->
+
+</body>
+</html>
