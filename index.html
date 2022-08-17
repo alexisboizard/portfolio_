@@ -21,7 +21,7 @@
     <div id="whoami">
         <div class="top-bar">
             <div class="close" onclick="showWhoAmI(true)"></div>
-            <div class="minimize" onclick="showWhoAmI(true)"></div>
+            <div class="minimize" onclick="minimizeWhoAmI(true);showWhoAmI(true)"></div>
             <div class="maximize" onclick="window.open('./whoami.html','name','width=1100,height=600')"></div>
         </div>
         <div class="content">
@@ -36,8 +36,8 @@
     <div id="projects">
         <div class="top-bar">
             <div class="close" onclick="showProjects(true)"></div>
-            <div class="minimize"></div>
-            <div class="maximize"></div>
+            <div class="minimize" onclick="minimizeProjects(true);showProjects(true)"></div>
+            <div class="maximize" onclick="window.open('./projects.html')"></div>
         </div>
         <div class="content">
             <span id="command2">guest@alexis-boizard.fr ~/ $</span>
@@ -66,8 +66,8 @@
     <div id="skills">
         <div class="top-bar">
             <div class="close" onclick="showSkills(true)"></div>
-            <div class="minimize"></div>
-            <div class="maximize" onclick="window.open('./whoami.html')"></div>
+            <div class="minimize" onclick="minimizedSkills(true);showSkills(true)"></div>
+            <div class="maximize" onclick="window.open('./skills.html')"></div>
         </div>
         <div class="content">
             <span id="command3">guest@alexis-boizard.fr ~/ $</span>
@@ -77,8 +77,8 @@
     <div id="contact">
         <div class="top-bar">
             <div class="close" onclick="showContact(true)"></div>
-            <div class="minimize"></div>
-            <div class="maximize"></div>
+            <div class="minimize" onclick="minimizeContact(true);showContact(true)"></div>
+            <div class="maximize" onclick="window.open('./contact.html')"></div>
         </div>
         <div class="content">
             <span id="command4">guest@alexis-boizard.fr ~/ $</span>
@@ -102,7 +102,24 @@
             </div>
         </div>
     </div>
-
+    <div class="minimized-windows">
+        <div id="minimized-whoami" onclick="showWhoAmI(false);minimizeWhoAmI(false)">
+            <i class="fa-solid fa-user fa-2xl" ></i>
+            <p class="text">Qui suis-je ?</p>
+        </div>
+        <div id="minimized-projects" onclick="showProjects(false);minimizeProjects(false)">
+            <i class="fa-solid fa-folder fa-2xl"></i>
+            <p class="text">Mes Projets ?</p>
+        </div>
+        <div id="minimized-skills" onclick="showSkills(false);minimizedSkills(false)">
+            <i class="fa-solid fa-gears fa-2xl"></i>
+            <p class="text">Qui suis-je ?</p>
+        </div>
+        <div id="minimized-contact" onclick="showContact(false);minimizeContact(false)">
+            <i class="fa-solid fa-at fa-2xl"></i>
+            <p class="text">Qui suis-je ?</p>
+        </div>
+    </div>
 <script>
     function typingText(string,id,time){
         let i = 0;
@@ -152,7 +169,7 @@
     function showProjects(close){
         if(close === false){
             document.getElementById("projects").style.display = "flex"
-            document.getElementById("projects").style.flexDirection = "column   "
+            document.getElementById("projects").style.flexDirection = "column"
             document.getElementById("menu").style.display = "none"
             typingText(" ls --all projects","command2",150)
 
@@ -199,6 +216,35 @@
         }else{
             document.getElementById("contact").style.display = "none"
             document.getElementById("menu").style.display = "flex"
+        }
+
+    }
+    function minimizeWhoAmI(state){
+        if(state){
+            document.getElementById("minimized-whoami").style.display = "flex"
+        }else{
+            document.getElementById("minimized-whoami").style.display = "none"
+        }
+    }
+    function minimizeProjects(state){
+        if(state){
+            document.getElementById("minimized-projects").style.display = "flex"
+        }else{
+            document.getElementById("minimized-projects").style.display = "none"
+        }
+    }
+    function minimizedSkills(state){
+        if(state){
+            document.getElementById("minimized-skills").style.display = "flex"
+        }else{
+            document.getElementById("minimized-skills").style.display = "none"
+        }
+    }
+    function minimizeContact(state){
+        if(state){
+            document.getElementById("minimized-contact").style.display = "flex"
+        }else{
+            document.getElementById("minimized-contact").style.display = "none"
         }
     }
 
