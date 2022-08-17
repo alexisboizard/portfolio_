@@ -40,7 +40,7 @@
             <div class="maximize" onclick="window.open('./projects.html')"></div>
         </div>
         <div class="content">
-            <span id="command2">guest@alexis-boizard.fr ~/ $</span>
+            <span id="command2">guest@alexisboizard.fr ~/ $</span>
             <div class="pane">
                 <div class="p1 project-card" style="background-color:#0F6C2B;" onclick="location.assign('https://www.github.com/lambda-decv/SAE-101-102')">
                     <p>Projet n° 1 : Le Panda</p>
@@ -71,7 +71,7 @@
             <div class="maximize" onclick="window.open('./skills.html')"></div>
         </div>
         <div class="content">
-            <span id="command3">guest@alexis-boizard.fr ~/ $</span>
+            <span id="command3">guest@alexisboizard.fr ~/ $</span>
             <span></span>
         </div>
     </div>
@@ -82,7 +82,7 @@
             <div class="maximize" onclick="window.open('./contact.html')"></div>
         </div>
         <div class="content">
-            <span id="command4">guest@alexis-boizard.fr ~/ $</span>
+            <span id="command4">guest@alexisboizard.fr ~/ $</span>
             <div class="logo">
                 <a target="_blank" href="https://github.com/lambda-decv" id="l1">
                     <i class="fa-brands fa-github-square fa-4x"></i>
@@ -135,7 +135,7 @@
     }
     function showWhoAmI(close){
         let cpt = 0;
-        document.getElementById("command").innerHTML = "guest@alexis-boizard.fr ~/ $"
+        document.getElementById("command").innerHTML = "guest@alexisboizard.fr ~/ $"
         document.getElementById("name").innerHTML = " "
         document.getElementById("lastname").innerHTML = " "
         document.getElementById("age").innerHTML = null
@@ -168,6 +168,7 @@
 
     }
     function showProjects(close){
+        document.getElementById("command2").textContent = "guest@alexisboizard.fr ~/ $"
         if(close === false){
             document.getElementById("projects").style.display = "flex"
             document.getElementById("projects").style.flexDirection = "column"
@@ -181,6 +182,7 @@
         }
     }
     function showSkills(close){
+        document.getElementById("command3").textContent = "guest@alexisboizard.fr ~/ $"
         if(close === false){
             document.getElementById("skills").style.display = "flex"
             document.getElementById("skills").style.flexDirection = "column"
@@ -193,7 +195,7 @@
     }
     function showContact(close){
         let cpt = 1;
-        document.getElementById("command4").innerHTML = "guest@alexis-boizard.fr ~/ $"
+        document.getElementById("command4").innerHTML = "guest@alexisboizard.fr ~/ $"
         document.getElementById("l1").style.display = "none"
         document.getElementById("l2").style.display = "none"
         document.getElementById("l3").style.display = "none"
