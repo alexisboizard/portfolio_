@@ -181,6 +181,14 @@ body{
     width: 28.3%;
     height: 37%;
     flex-direction: row;
+    text-align: center;
+    background-color: lightgray !important;
+}
+.project-card>p{
+    margin-top: 3%;
+}
+.project-card:hover{
+    opacity: 0.5;
 }
 .logo{
     width: 50%;
@@ -264,4 +272,12 @@ body{
 .minimized-windows{
     margin-left: 12.5vw;
 
+}
+
+.img-project{
+    width: 30%;
+    margin-top: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

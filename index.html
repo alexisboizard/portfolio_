@@ -42,8 +42,9 @@
         <div class="content">
             <span id="command2">guest@alexis-boizard.fr ~/ $</span>
             <div class="pane">
-                <div class="p1 project-card" style="background-color:#0F6C2B;">
-                    <p>1</p>
+                <div class="p1 project-card" style="background-color:#0F6C2B;" onclick="location.assign('https://www.github.com/lambda-decv/SAE-101-102')">
+                    <p>Projet n° 1 : Le Panda</p>
+                    <img class="img-project" id="panda" src="img/panda_normal.png" onmouseover="changePanda()">
                 </div>
                 <div class="p2 project-card" style="background-color:#BC6F10;">
                     <p>2</p>
@@ -109,15 +110,15 @@
         </div>
         <div id="minimized-projects" onclick="showProjects(false);minimizeProjects(false)">
             <i class="fa-solid fa-folder fa-2xl"></i>
-            <p class="text">Mes Projets ?</p>
+            <p class="text">Mes Projets </p>
         </div>
         <div id="minimized-skills" onclick="showSkills(false);minimizedSkills(false)">
             <i class="fa-solid fa-gears fa-2xl"></i>
-            <p class="text">Qui suis-je ?</p>
+            <p class="text">Mes compétences</p>
         </div>
         <div id="minimized-contact" onclick="showContact(false);minimizeContact(false)">
             <i class="fa-solid fa-at fa-2xl"></i>
-            <p class="text">Qui suis-je ?</p>
+            <p class="text">Contact</p>
         </div>
     </div>
 <script>
@@ -246,6 +247,9 @@
         }else{
             document.getElementById("minimized-contact").style.display = "none"
         }
+    }
+    function changePanda(){
+        document.getElementById("panda").setAttribute('src','./img/image2.png')
     }
 
 </script>
