@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Signika', sans-serif;
+}
+body{
+    height:100vh;
+    background: -webkit-radial-gradient(top left, 400% 150%, rgb(58, 93, 175) 0%, rgba(4,29,88,1) 18%, rgba(4,29,88,1) 100%);
+}
+
+.login-button{
+    margin-top: 2vh;
+    margin-right: 2vh;
+    text-align: center;
+    float: right;
+    text-decoration: none;
+    width: 15vw;
+    height: 15vw;
+    border: solid 1px #fff;
+    border-radius: 100%;
+}
+.login-button>i{    
+    margin-top: 3.75vw;
+}
+h1{
+    width: 50%;
+    padding-top: 15vh;
+    padding-left: 12.5vw;
+}
+.container{
+    background-color: #2754bd;
+    border-radius: 25px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    font-size: 20px;
+    justify-content: center;    
+}
+.test{
+    width: 75vw;
+    height: 10vh;
+    margin-left: 12.5vw;
+    margin-top: 5vh;
+}
+.test>p{
+    text-align: center;
+    align-items: center;
+}
+.stats{
+    text-align: center;
+    margin-top: 5vh;
+    
+}
+.top{
+    width: 75vw;
+    height: 10vh;
+    margin-left: 12.5vw;
+    margin-top: 5vh;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.bottom-part{
+    display: flex;
+    flex-direction: row;
+}
+.container-bot{
+    width: 35vw;
+}
+.right>div{
+    height: 8.5vh;
+    margin-left: 12.5vw;
+}
+.r1{
+    margin-top: 5vh;
+}
+.r2{
+    margin-top: 3vh;
+}
+.left{
+    height: 20vh;
+    margin-left: 3vh;
+    margin-top: 5vh;
+
+}
+
+.navbar{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+}
+
+.navbar>a{
+    width: 25vw;
+    height: 10vh;
+    margin-top: 2.5vh;
+    font-size: 2em;
+    text-align: center;
+}
