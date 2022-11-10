@@ -17,8 +17,6 @@ body{
     text-decoration: none;
     width: 15vw;
     height: 15vw;
-    border: solid 1px #fff;
-    border-radius: 100%;
 }
 .login-button>i{    
     margin-top: 3.75vw;
