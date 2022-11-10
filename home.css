@@ -7,7 +7,7 @@
 }
 body{
     background: -webkit-radial-gradient(top left, 400% 150%, rgb(58, 93, 175) 0%, rgba(4,29,88,1) 18%, rgba(4,29,88,1) 100%);
-    min-height: 100vh;
+    height: 100%;
 
 }
 
