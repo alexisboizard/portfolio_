@@ -5,7 +5,7 @@
     font-family: 'Signika', sans-serif;
 }
 body{
-    height:100vh;
+    height:100vh    ;
     background: -webkit-radial-gradient(top left, 400% 150%, rgb(58, 93, 175) 0%, rgba(4,29,88,1) 18%, rgba(4,29,88,1) 100%);
 }
 
@@ -22,7 +22,7 @@ body{
     margin-top: 3.75vw;
 }
 h1{
-    width: 50%;
+    width: 70%;
     padding-top: 15vh;
     padding-left: 12.5vw;
 }
@@ -92,14 +92,14 @@ h1{
     height: 15vh;
     display: flex;
     flex-direction: row;
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    left: 0;
 }
 
 .navbar>a{
     width: 25vw;
     height: 10vh;
-    margin-top: 3vh;
     font-size: 2em;
     text-align: center;
 }
