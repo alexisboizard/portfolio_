@@ -6,7 +6,7 @@
     
 }
 body{
-    background: -webkit-radial-gradient(top left, 400% 150%, rgb(58, 93, 175) 0%, rgba(4,29,88,1) 18%, rgba(4,29,88,1) 100%);
+    background: url(/img-sae/bg.png) no-repeat center center fixed;
 }
 
 .login-button{
@@ -92,7 +92,7 @@ h1{
     height: 15vh;
     display: flex;
     flex-direction: row;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
 }
