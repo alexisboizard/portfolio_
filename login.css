@@ -57,7 +57,16 @@ input:focus{
 .submit{
     width: 30vw;
 }
-
+.form-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75vw;
+}
+.form-top>input{
+    width: 35vw;
+    
+}
 .to-register{
     margin-top: 5vh;
     text-align: center;
