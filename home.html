@@ -41,11 +41,35 @@
             </div>
         </div>
     </div>
+    
     <footer class="navbar">
         <a href="home.html"><img src="img-sae/home.svg" alt="" srcset=""></a>
         <a href="lesson.html"><img src="img-sae/plus.svg" alt="" srcset=""></a>
         <a href="replay.html"><img src="img-sae/video.svg" alt="" srcset=""></a>
         <a href="profile.html"><img src="img-sae/gear.svg" alt="" srcset=""></i></a>
     </footer>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDZ9pq_S1PKE54s9GTHssSaOd_JTAH6Duk",
+          authDomain: "ptut-79321.firebaseapp.com",
+          projectId: "ptut-79321",
+          storageBucket: "ptut-79321.appspot.com",
+          messagingSenderId: "1048719818176",
+          appId: "1:1048719818176:web:eb8ee66136779f759edc25",
+          measurementId: "G-X43F1MWQBZ"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
 </html>
