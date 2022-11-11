@@ -9,19 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.1/control_utils.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <main>
         <div class="camera">
-            <canvas id="camera-sensor"></canvas>
-            <video id="camera-view" autoplay playsinline></video>
-            <img src="//:0" alt="" id="camera--output">
+            <video class="input_video3" style="display: none;" ></video>
+            <canvas class="output3"></canvas>
         </div>
         <div class="white-circle">
             <div class="red-circle"></div>
             <div class="red-square" style="display: none;"></div>
         </div>
+        <div class="control3" style="visibility: hidden;"></div>
+
     </main>
     <footer class="navbar">
         <a href="home.html"><img src="img-sae/home.svg" alt="" srcset=""></a>
@@ -30,5 +32,12 @@
         <a href="settings.html"><img src="img-sae/gear.svg" alt="" srcset=""></i></a>
     </footer>
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.1/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.1/control_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.2/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.1/hands.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="hands.js"></script>
+    
+</head>
 </body>
 </html>

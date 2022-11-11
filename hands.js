@@ -4,10 +4,6 @@ const controlsElement3 = document.getElementsByClassName('control3')[0];
 const canvasCtx3 = out3.getContext('2d');
 const fpsControl = new FPS();
 
-const spinner = document.querySelector('.loading');
-spinner.ontransitionend = () => {
-  spinner.style.display = 'none';
-};
 
 function onResultsHands(results) {
   document.body.classList.add('loaded');

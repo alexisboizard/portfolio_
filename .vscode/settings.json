@@ -1,0 +1,11 @@
+{
+    "liveServer.settings.port": 5500,
+    "liveServer.settings.root": "/",
+    "liveServer.settings.CustomBrowser": "microsoft-edge",
+    "liveServer.settings.https": {
+      "enable": true,
+      "cert": "C:/Users/alexi/Documents/portfolio_/localhost.pem",
+      "key": "C:/Users/alexi/Documents/portfolio_/localhost.key",
+      "passphrase": "pass"
+    }
+}

@@ -17,10 +17,14 @@ main{
     align-items: center;
 }
 .camera{
+    background-color: #000;
     width:75vw;
     height: 75vh;
     margin-top: 5vh;
     border-radius: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .white-circle{
     margin-top: 2.5vh;
@@ -46,6 +50,9 @@ main{
     margin-top: 15px;
     margin-left: 15px;
 }
+.output3{
+    width: 100%;
+    border-radius: 5vw;
 .navbar{
     margin-top: 7vh;
     width: 100%;
