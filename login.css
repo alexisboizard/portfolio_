@@ -1,42 +1,69 @@
 *{
     margin: 0;
     padding: 0;
-    color: #fff;
     font-family: 'Signika', sans-serif;
-    
 }
+
 body{
     background-color: #e2e2e2;
     min-height: 100%;
 }
 
-h1{
+.back{
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+.main{
     padding-top: 10vh;
     text-align: center;
     color: #000;
 }
-.container{
-    margin-left: 2.5vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.profil{
+    width: 100px;
 }
-.content{
-    justify-content: center;
+label{
+    display: none;
+}
+form{
     display: flex;
     flex-direction: column;
-    margin-top: 5vh;
-    margin-left: 5vw;
-    width: 40vw;
-    height: 30vh;
-    background-color: #2754bd;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    font-size: 20px;
-}
-.content>p{
-    text-align: center;
     align-items: center;
+    
 }
+::placeholder{
+    color: #fff;
+    opacity: 1;
+}
+::ms-input-placeholder{
+    color: #fff;
+}
+input{
+    font-size: 1em !important;
+    width: 75vw;
+    height: 5vh;
+    background-color: #2754bd;
+    border: none;
+    border-radius: 25px;
+    margin-top: 7vh;
+    text-align: center;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    font-size: 20px;
+
+}
+input:focus{
+    border: 1px solid #fff;
+    outline:none;
+}
+.submit{
+    width: 30vw;
+}
+
+.to-register{
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 0.85em;
+}
+
 .navbar{
     margin-top: 7vh;
     width: 100%;
@@ -50,7 +77,6 @@ h1{
 .navbar>a{
     width: 25vw;
     height: 10vh;
-    font-size: 2em;
     text-align: center;
 }
 .navbar>a>img{
