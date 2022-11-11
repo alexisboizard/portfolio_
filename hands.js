@@ -42,8 +42,8 @@ const camera = new Camera(video3, {
   onFrame: async () => {
     await hands.send({image: video3});
   },
-  width: 480,
-  height: 480
+  width: 1280,
+  height: 720
 });
 
 camera.start();
@@ -59,7 +59,7 @@ new ControlPanel(controlsElement3, {
       fpsControl,
       new Toggle({title: 'Selfie Mode', field: 'selfieMode'}),
       new Slider(
-          {title: 'Max Number of Hands', field: 'maxNumHands', range: [0,1], step: 1}),
+          {title: 'Max Number of Hands', field: 'maxNumHands', range: [0,2], step: 1}),
       new Slider({
         title: 'Min Detection Confidence',
         field: 'minDetectionConfidence',
@@ -77,3 +77,24 @@ new ControlPanel(controlsElement3, {
       video3.classList.toggle('selfie', options.selfieMode);
       hands.setOptions(options);
     });
+
+let touchstartX = 0
+let touchendX = 0
+    
+function checkDirection() {
+  if (touchendX < touchstartX && touchendX > 150) {
+    document.getElementById("right").style.display = "flex";
+  }
+  if(touchendX > touchstartX && touchendX > 150) {
+    document.getElementById("right").style.display = "none";
+  }
+}
+
+document.addEventListener('touchstart', e => {
+  touchstartX = e.changedTouches[0].screenX
+})
+
+document.addEventListener('touchend', e => {
+  touchendX = e.changedTouches[0].screenX
+  checkDirection()
+})
