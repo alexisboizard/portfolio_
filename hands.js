@@ -3,7 +3,31 @@ const out3 = document.getElementsByClassName('output3')[0];
 const controlsElement3 = document.getElementsByClassName('control3')[0];
 const canvasCtx3 = out3.getContext('2d');
 const fpsControl = new FPS();
+let width = 1280;
+let height = 720;
 
+async function getWebcamResolution() {
+  let features = {
+      audio: false,
+      video: true
+  };
+
+  let display = await navigator.mediaDevices
+      .getUserMedia(features);
+
+  let settings = display.getVideoTracks()[0]
+      .getSettings();
+
+  let width = settings.width;
+  let height = settings.height;
+
+  return {width, height};
+}
+
+getWebcamResolution().then((resolution) => {
+  width = resolution.width;
+  height = resolution.height;
+});
 
 function onResultsHands(results) {
   document.body.classList.add('loaded');
@@ -42,8 +66,8 @@ const camera = new Camera(video3, {
   onFrame: async () => {
     await hands.send({image: video3});
   },
-  width: 1280,
-  height: 720
+  width: width,
+  height: height
 });
 
 camera.start();

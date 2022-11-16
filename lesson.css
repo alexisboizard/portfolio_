@@ -42,6 +42,9 @@ main{
     margin-left: 5px;
     
 }
+#circle{
+    display: block;
+}
 .red-square{
     background-color: red;
     border-radius: 5px ;
@@ -49,6 +52,9 @@ main{
     height: 30px;
     margin-top: 15px;
     margin-left: 15px;
+}
+#square{
+    display: none;
 }
 .output3{
     width: 100%;
