@@ -51,9 +51,9 @@ camera.start();
 new ControlPanel(controlsElement3, {
       selfieMode: true,
       maxNumHands: 1,
-      minDetectionConfidence: 0.90,
-      minTrackingConfidence: 0.90 
-    })
+      minDetectionConfidence: 0.5,
+      minTrackingConfidence: 0.5
+        })
     .add([
       new StaticText({title: 'MediaPipe Hands'}),
       fpsControl,
