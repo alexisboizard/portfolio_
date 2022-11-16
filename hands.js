@@ -28,6 +28,7 @@ getWebcamResolution().then((resolution) => {
   width = resolution.width;
   height = resolution.height;
 });
+alert("Width : " + width + " Height : " + height);
 
 function onResultsHands(results) {
   document.body.classList.add('loaded');
