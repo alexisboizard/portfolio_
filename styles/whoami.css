@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Marck+Script&display=swap');*{
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Marck+Script&display=swap');
+
+*{
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -8,7 +10,6 @@
 }
 body{
     background-color: #232c33;
-
 }
 #whoami{
     display: flex;
@@ -21,24 +22,17 @@ body{
 .top-bar{
     width: 100%;
     height: 5%;
-
     background-color: lightgray;
-
     display: flex;
-
-
     border-radius: 5px 5px 0 0;
 }
 
 .close{
     width: 1vw;
     height: 1vw;
-
     margin-left: .5vw;
     margin-top: .5vw;
-
     border-radius: .5vw;
-
     background-color: #AA2622;
 }
 
@@ -75,44 +69,11 @@ body{
     background-color: #0F6C2B;
 }
 
-.content{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    width: 100%;
-    height: 100%;
-
-
-    background-color: rgba(255,255,255,0.1);
-    color: black;
-
-    border-radius: 0 0 5px 5px;
-
-    font-family: 'Kdam Thmor Pro', sans-serif;
-}
-#cursor{
-    width: .75%;
-    height: 75%;
-
-    margin-top: -1.75%;
-    margin-left: 22.5%;
-
-    background-color: #41DC0E;
-
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-
 #command{
     margin-left: .5%;
 
     width: 99.5%;
-    height: 5%;
+    height: 100%;
     background: #394248;
 
     color: #41DC0E;
@@ -121,9 +82,247 @@ body{
 #name,#lastname,#age,#student,#bio{
     margin-left: .5%;
     width: 95%;
-    height: 5%;
+    height: 100%;
     background: #394248;
     margin-top: 1vh;
     color: #F4F5F5;
 
 }
+  .css-typing p {
+    border-right: .35em solid white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .css-typing p:nth-child(1) {
+    width: 7.3em;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type 2s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  .css-typing p:nth-child(2) {
+    width: 11.5em;
+    opacity: 0;
+    -webkit-animation: type2 2s steps(40, end);
+    animation: type2 2s steps(40, end);
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  .css-typing p:nth-child(3) {
+    width: 7.3em;
+    opacity: 0;
+    -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+    animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+
+  .css-typing p:nth-child(4) {
+    width: 7.3em;
+    opacity: 0;
+    -webkit-animation: type4 5s steps(20, end), blink .5s step-end infinite alternate;
+    animation: type4 5s steps(20, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  .css-typing p:nth-child(5) {
+    width: 7.3em;
+    opacity: 0;
+    -webkit-animation: type5 5s steps(20, end), blink .5s step-end infinite alternate;
+    animation: type5 5s steps(20, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  .css-typing p:nth-child(6) {
+    width: 7.3em;
+    opacity: 0;
+    -webkit-animation: type6 5s steps(20, end), blink .5s step-end infinite alternate;
+    animation: type6 5s steps(20, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes type4 {
+    0% {
+        width: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      99.9% {
+        border-right: .15em solid orange;
+      }
+      100% {
+        opacity: 1;
+        border: none;
+      }
+  }
+  
+  @-webkit-keyframes type4 {
+    0% {
+        width: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      99.9% {
+        border-right: .15em solid orange;
+      }
+      100% {
+        opacity: 1;
+        border: none;
+      }
+  }
+
+  @keyframes type5 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes type5 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes type6 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes type6 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @-webkit-keyframes blink {
+    50% {
+      border-color: tranparent;
+    }
+  }

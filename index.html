@@ -3,259 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <title>Alexis Boizard</title>
-    <!-- Import CSS file -->
-    <link type="text/css" rel="stylesheet" href="./styles/style-index.css ">
-    <!-- Import FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link type="text/css" rel="stylesheet" href="./styles/index.css ">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 </head>
 <body>
-    <h3 class="title">Alexis Boizard</h3>
-    <div id="menu">
+    <div class="header">
+        <h3 class="title"> &#60;Alexis Boizard/&#62; </h3>
             <div class="menu-link">
-                <a href="#whoami" class="link impair" onclick="showWhoAmI(false)"><p>Qui suis-je ?</p></a>
-                <a href="#projects" class="link pair" onclick="showProjects(false)"><p>Mes projets</p></a>
-                <a href="#skills" class="link impair" onclick="showSkills(false)"><p>Mes compétences</p></a>
-                <a href="#contact" class="link pair" onclick="showContact(false)"><p>Me contacter</p></a>
+                <a href="#whoami" class="link impair"><p>Qui suis-je ?</p></a>
+                <a href="#projects" class="link pair"><p>Mes projets</p></a>
+                <a href="#skills" class="link impair"><p>Mes compétences</p></a>
+                <a href="#contact" class="link pair"><p>Me contacter</p></a>
             </div>
-        </div>
+    </div>
     <div id="whoami">
-        <div class="top-bar">
-            <div class="close" onclick="showWhoAmI(true)"></div>
-            <div class="minimize" onclick="minimizeWhoAmI(true);showWhoAmI(true)"></div>
-            <div class="maximize" onclick="window.open('./whoami.html','name','width=1100,height=600')"></div>
-        </div>
-        <div class="content">
-            <span id="command"></span>
-            <span id="name"></span>
-            <span id="lastname"></span>
-            <span id="age"></span>
-            <span id="student"></span>
-            <p id="bio"></p>
-        </div>
-    </div>
-    <div id="projects">
-        <div class="top-bar">
-            <div class="close" onclick="showProjects(true)"></div>
-            <div class="minimize" onclick="minimizeProjects(true);showProjects(true)"></div>
-            <div class="maximize" onclick="window.open('./projects.html')"></div>
-        </div>
-        <div class="content">
-            <span id="command2">guest@alexisboizard.fr ~/ $</span>
-            <div class="pane">
-                <div class="p1 project-card" style="background-color:#0F6C2B;" onclick="location.assign('https://www.github.com/lambda-decv/SAE-101-102')">
-                    <p>Projet n° 1 : Le Panda</p>
-                    <img class="img-project" id="panda" src="img/panda_normal.png" onmouseover="changePanda()">
-                </div>
-                <div class="p2 project-card" style="background-color:#BC6F10;">
-                    <p>2</p>
-                </div>
-                <div class="p3 project-card" style="background-color:#F4F5F5;">
-                    <p>3</p>
-                </div>
-                <div class="p4 project-card" style="background-color:#881F1B;">
-                    <p>4</p>
-                </div>
-                <div class="p5 project-card" style="background-color:#41DC0E;">
-                    <p>5</p>
-                </div>
-                <div class="p6 project-card" style="background-color:#881F1B;">
-                    <p>6</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="skills">
-        <div class="top-bar">
-            <div class="close" onclick="showSkills(true)"></div>
-            <div class="minimize" onclick="minimizedSkills(true);showSkills(true)"></div>
-            <div class="maximize" onclick="window.open('./skills.html')"></div>
-        </div>
-        <div class="content">
-            <span id="command3">guest@alexisboizard.fr ~/ $</span>
-            <span></span>
-        </div>
-    </div>
-    <div id="contact">
-        <div class="top-bar">
-            <div class="close" onclick="showContact(true)"></div>
-            <div class="minimize" onclick="minimizeContact(true);showContact(true)"></div>
-            <div class="maximize" onclick="window.open('./contact.html')"></div>
-        </div>
-        <div class="content">
-            <span id="command4">guest@alexisboizard.fr ~/ $</span>
-            <div class="logo">
-                <a target="_blank" href="https://github.com/lambda-decv" id="l1">
-                    <i class="fa-brands fa-github-square fa-4x"></i>
-                    <p>@lambda-decv</p>
+        <div class="left_whoami">
+            <h2>Salut ! Je suis Alexis</h2>
+            <p>Un developpeur mobile passioné, avec de l'expérience en développement Android natif, mais aussi en Flutter.
+                Passioné d'informatique depuis que je suis en 4ème, des études dans ce domaine, sont apparus comme une évidence.
+                De plus, je suis présent dans le monde de l'associatif en devenant président du BDE (Bureau des Etudiants) de l'IUT Lyon 1 de Bourg-en-Bresse. Mais aussi en tant que trésorier dans une autres associations.
+            </p>
+            <div class="buttons">
+                <a href="mailto:contact@alexisboizard.com">
+                    <button> Prendre contact</button>
                 </a>
-                <a target="_blank" href="https://twitter.com/alexisboiz" id="l2">
-                    <i class="fa-brands fa-twitter-square fa-4x"></i>
-                    <p>@alexisboiz</p>
-                </a>
-                <a href="https://fr.linkedin.com/in/alexis-boizard-0034aa214" id="l3">
-                    <i class="fa-brands fa-linkedin fa-4x"></i>
-                    <p>@alexis-boizard</p>
-                </a>
-                <a href="mailto:bzdalexis@gmail.com" id="l4">
-                    <i class="fa-solid fa-at fa-4x"></i>
-                    <p>bzdalexis@gmail.com</p>
+                <a href="assets/to_download/CV.pdf" download="alexis_boizard_cv.pdf">
+                    <button> Télécharger mon C.V.</button>
                 </a>
             </div>
         </div>
+        <img src="assets/img/portrait-3d-personnes.png">
     </div>
-    <div class="minimized-windows">
-        <div id="minimized-whoami" onclick="showWhoAmI(false);minimizeWhoAmI(false)">
-            <i class="fa-solid fa-user fa-2xl" ></i>
-            <p class="text">Qui suis-je ?</p>
+    <div class="projects" id="projects">
+        <h2>Mes projets</h2>
+        <div class="card_list">
+            <div class="card">
+                <div class="card_header">
+                    <svg aria-hidden="true" class="repo-svg" height="20" role="img" viewBox="0 0 12 16" width="14">
+                    <path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+                    <h3>Boursewatcher</h3>
+                </div>
+                <p>🔥 A native android application to follow the stock market change.</p>
+                <svg style="color:#A97BFF;" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon">
+                    <path d="M8 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"></path>
+                </svg>
+                <span style="color: #1f2328;font-family: Oswald;"> Kotlin</span>
+            </div>
+            <div class="card">
+                <div class="card_header">
+                    <svg aria-hidden="true" class="repo-svg" height="20" role="img" viewBox="0 0 12 16" width="14">
+                        <path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+                    <h3>Boursewatcher</h3>
+                </div>
+                <p>🔥 A native android application to follow the stock market change.</p>
+                <svg style="color:#A97BFF;" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon">
+                    <path d="M8 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"></path>
+                </svg>
+                <span style="color: #1f2328;font-family: Oswald;"> Kotlin</span>
+            </div>
+            <div class="card">
+                <div class="card_header">
+                    <svg aria-hidden="true" class="repo-svg" height="20" role="img" viewBox="0 0 12 16" width="14">
+                    <path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+                    <h3>Boursewatcher</h3>
+                </div>
+                <p>🔥 A native android application to follow the stock market change.</p>
+                <svg style="color:#A97BFF;" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon">
+                    <path d="M8 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"></path>
+                </svg>
+                <span style="color: #1f2328;font-family: Oswald;"> Kotlin</span>
+            </div>
+            <div class="card">
+                <div class="card_header">
+                    <svg aria-hidden="true" class="repo-svg" height="20" role="img" viewBox="0 0 12 16" width="14">
+                        <path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+                    <h3>Boursewatcher</h3>
+                </div>
+                <p>🔥 A native android application to follow the stock market change.</p>
+                <svg style="color:#A97BFF;" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon">
+                    <path d="M8 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"></path>
+                </svg>
+                <span style="color: #1f2328;font-family: Oswald;"> Kotlin</span>
+            </div>
+            <div class="card">
+                <div class="card_header">
+                    <svg aria-hidden="true" class="repo-svg" height="20" role="img" viewBox="0 0 12 16" width="14">
+                        <path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+                    <h3>Boursewatcher</h3>
+                </div>
+                <p>🔥 A native android application to follow the stock market change.</p>
+                <svg style="color:#A97BFF;" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon">
+                    <path d="M8 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"></path>
+                </svg>
+                <span style="color: #1f2328;font-family: Oswald;"> Kotlin</span>
+            </div>
+            <div class="card">
+                <div class="card_header">
+                    <svg aria-hidden="true" class="repo-svg" height="20" role="img" viewBox="0 0 12 16" width="14">
+                        <path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+                    <h3>Boursewatcher</h3>
+                </div>
+                <p>🔥 A native android application to follow the stock market change.</p>
+                <svg style="color:#A97BFF;" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon">
+                    <path d="M8 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"></path>
+                </svg>
+                <span style="color: #1f2328;font-family: Oswald;"> Kotlin</span>
+            </div>
         </div>
-        <div id="minimized-projects" onclick="showProjects(false);minimizeProjects(false)">
-            <i class="fa-solid fa-folder fa-2xl"></i>
-            <p class="text">Mes Projets </p>
-        </div>
-        <div id="minimized-skills" onclick="showSkills(false);minimizedSkills(false)">
-            <i class="fa-solid fa-gears fa-2xl"></i>
-            <p class="text">Mes compétences</p>
-        </div>
-        <div id="minimized-contact" onclick="showContact(false);minimizeContact(false)">
-            <i class="fa-solid fa-at fa-2xl"></i>
-            <p class="text">Contact</p>
+        <a href="https://github.com/alexisboizard">
+            <button>Plus de projets</button>
+        </a>
+    </div>
+    <div class="skills" id="skills">
+        <img src="assets/img/undraw_mobile_development_re_wwsn.svg" alt="">
+        <div class="left_skills">
+            <h3>Compétences</h3>
+            <p>Un developpeur avec beaucoup d'arc à son arc ! Une curiosité hors-norme !</p>
+            <div class="icons">
+                <i class="devicon-java-plain"></i>
+                <i class="devicon-dart-plain"></i>
+                <i class="devicon-android-plain"></i>
+                <i class="devicon-flutter-plain"></i>
+                <i class="devicon-html-plain"></i>
+                <i class="devicon-javascript-plain"></i>
+                <i class="devicon-nodejs-plain"></i>
+                <i class="devicon-npm-original-wordmark"></i>
+                <i class="devicon-cplusplus-plain"></i>   
+                <i class="devicon-figma-plain"></i>        
+                <i class="devicon-firebase-plain"></i>        
+                <i class="devicon-unity-plain"></i>        
+                <i class="devicon-notion-plain"></i>        
+                <i class="devicon-bash-plain"></i>        
+                <i class="devicon-linux-plain"></i>        
+                <i class="devicon-raspberrypi-plain"></i>     
+                <i class="devicon-amazonwebservices-plain"></i>
+            </div>
         </div>
     </div>
-<script>
-    function typingText(string,id,time){
-        let i = 0;
-        let typing = setInterval(function (){
-            document.getElementById(id).innerHTML += string[i]
-            i++
-            if(i >= string.length){
-                clearInterval(typing)
-                //document.getElementById("command").innerHTML += "<div id='cursor'></div>"
-            }
-        },time)
-    }
-    function showWhoAmI(close){
-        let cpt = 0;
-        document.getElementById("command").innerHTML = "guest@alexisboizard.fr ~/ $"
-        document.getElementById("name").innerHTML = " "
-        document.getElementById("lastname").innerHTML = " "
-        document.getElementById("age").innerHTML = null
-        document.getElementById("student").innerHTML = null
-        document.getElementById("bio").innerHTML = null
-        if(close === false){
-            document.getElementById("whoami").style.display = "flex"
-            document.getElementById("whoami").style.flexDirection = "column"
-            document.getElementById("menu").style.display = "none"
-            typingText(" whoami","command",75)
-            typingText(" Prénom : Alexis","name",75)
-            typingText(" NOM : BOIZARD","lastname",75)
-            typingText(" Âge : 18 ans","age",75)
-            typingText(" Etudiant en 1ère année, en Informatique, à l'IUT Lyon 1 de Bourg-en-Bresse","student",75)
-            typingText("Bio : Passioné d'informatique depuis que je suis en 4ème, des études dans ce domaine, sont apparus comme une évidence." +
-                " Je suis aussi un sportif, un fan et un joueur de rugby, on s'éloigne un peu du clicher de l'étudiant en informatique." +
-                " Et pour s'en éloigner encore plus j'ai aussi une passion pour la cuisine." +
-                " De plus, j'ai récemement fais mes premiers pas dans le monde de l'associatif en devenant président du BDE (Bureau des Etudiants) de l'IUT Lyon 1 de Bourg-en-Bresse","bio",25)
-        }else{
-            document.getElementById("whoami").style.display = "none"
-            document.getElementById("menu").style.display = "flex"
-
-        }
-        if(cpt > 0){
-            document.getElementById("whoami").style.display = "flex"
-            document.getElementById("whoami").style.flexDirection = "column"
-            document.getElementById("menu").style.display = "none"
-        }
-
-
-    }
-    function showProjects(close){
-        document.getElementById("command2").textContent = "guest@alexisboizard.fr ~/ $"
-        if(close === false){
-            document.getElementById("projects").style.display = "flex"
-            document.getElementById("projects").style.flexDirection = "column"
-            document.getElementById("menu").style.display = "none"
-            typingText(" ls --all projects","command2",150)
-
-
-        }else{
-            document.getElementById("projects").style.display = "none"
-            document.getElementById("menu").style.display = "flex"
-        }
-    }
-    function showSkills(close){
-        document.getElementById("command3").textContent = "guest@alexisboizard.fr ~/ $"
-        if(close === false){
-            document.getElementById("skills").style.display = "flex"
-            document.getElementById("skills").style.flexDirection = "column"
-            document.getElementById("menu").style.display = "none"
-            typingText(" ls --all skills","command3",150)
-        }else{
-            document.getElementById("skills").style.display = "none"
-            document.getElementById("menu").style.display = "flex"
-        }
-    }
-    function showContact(close){
-        let cpt = 1;
-        document.getElementById("command4").innerHTML = "guest@alexisboizard.fr ~/ $"
-        document.getElementById("l1").style.display = "none"
-        document.getElementById("l2").style.display = "none"
-        document.getElementById("l3").style.display = "none"
-        document.getElementById("l4").style.display = "none"
-
-        if(close === false){
-            document.getElementById("contact").style.display = "flex"
-            document.getElementById("contact").style.flexDirection = "column"
-            document.getElementById("menu").style.display = "none"
-            typingText(" python3 contact.py","command4",150)
-            let showSocial = setInterval(function () {
-                let id = "l"+cpt;
-                document.getElementById(id).style.display = "flex"
-                cpt++
-                if(cpt > 4){
-                    clearInterval(showSocial)
-                }
-            },500)
-
-
-        }else{
-            document.getElementById("contact").style.display = "none"
-            document.getElementById("menu").style.display = "flex"
-        }
-
-    }
-    function minimizeWhoAmI(state){
-        if(state){
-            document.getElementById("minimized-whoami").style.display = "flex"
-        }else{
-            document.getElementById("minimized-whoami").style.display = "none"
-        }
-    }
-    function minimizeProjects(state){
-        if(state){
-            document.getElementById("minimized-projects").style.display = "flex"
-        }else{
-            document.getElementById("minimized-projects").style.display = "none"
-        }
-    }
-    function minimizedSkills(state){
-        if(state){
-            document.getElementById("minimized-skills").style.display = "flex"
-        }else{
-            document.getElementById("minimized-skills").style.display = "none"
-        }
-    }
-    function minimizeContact(state){
-        if(state){
-            document.getElementById("minimized-contact").style.display = "flex"
-        }else{
-            document.getElementById("minimized-contact").style.display = "none"
-        }
-    }
-    function changePanda(){
-        document.getElementById("panda").setAttribute('src','./img/image2.png')
-    }
-
-</script>
-        <!-- typed.min.js file from typed.js folder -->
-
+    <div class="contact" id="contact">
+        <h2 style="margin-bottom: 10%;">Restons en contact </h2>
+        <p  style="margin-bottom: 5%;">Envie de discuter d'un projet ? De réaliser un projet ? Ma boite mail est ouverte !</p>
+        <p>
+            <i class="fa-solid fa-location-dot"></i> 
+            Lyon, FRANCE
+        </p>
+        <div class="contact_icons">
+            <a href="https://github.com/alexisboizard" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://x.com/alexisboiz" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/alexis-boizard/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:contact@alexisboizard.fr" target="_blank"><i class="fa-solid fa-at"></i></a>
+        </div>
+    </div>
+    <footer>
+        <span>Made with ❤️ by Alexis BOIZARD</span>
+    </footer>
 </body>
 </html>
